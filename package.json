@@ -1,0 +1,17 @@
+{
+  "name": "wt-playwright-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Automatyczny scraper składu klanu War Thunder (Playwright + cron + API).",
+  "scripts": {
+    "start": "node src/server.js",
+    "fetch": "node src/fetchClan.js",
+    "install:pw": "npx playwright install chrome"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "playwright": "^1.46.1"
+  }
+}
